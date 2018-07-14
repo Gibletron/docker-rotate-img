@@ -2,7 +2,7 @@ FROM richarvey/nginx-php-fpm:latest
 MAINTAINER Gibletron
     
 # add local files
-COPY rotate.php /usr/share/nginx/html/rotate.php
+COPY rotate.php /var/www/html/index.php
 
 
 EXPOSE 80
