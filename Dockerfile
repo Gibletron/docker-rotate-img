@@ -9,5 +9,9 @@ RUN chown nginx -R /usr/share/nginx/html/ && \
     chown nginx /var/lib/php7/sessions && \
     chmod 755 -R /usr/share/nginx/html/
 
+EXPOSE 80
+
+VOLUME /config
+
 # Change default nginx to also startup fpm in our case.
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
