@@ -1,7 +1,7 @@
 <?php
 
 
-*/// Make this the relative path to the images, like "../img" or "random/images/".
+/// Make this the relative path to the images, like "../img" or "random/images/".
 // If the images are in the same directory, leave it blank.
 $folder = '/images';
 
